@@ -1,0 +1,38 @@
+{
+    "name": "atmden/img-fly",
+    "description": "Dynamically resize images on the Fly from ATMDEN for Laravel >7",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "5.*|6.*|7.*|8.*",
+        "league/glide-laravel": "1.*"
+    },
+    "author": {
+        "name": "Denis Dru ",
+        "email": "atmden@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShawnSandy\\ImgFly\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AtmDen\\ImgFly\\ImgflyServiceProvider"
+            ],
+            "aliases": {
+                "Imgfly": "AtmDen\\ImgFly\\Classes\\ImgflyFacade"
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.9.0"
+    }
+}
